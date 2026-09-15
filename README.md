@@ -1,4 +1,4 @@
-﻿# 🦾 6-DOF Robot Arm Hotkey & Web Controller
+﻿# 🦾 7-DOF Robot Arm Hotkey & Web Controller
 
 A high-performance robotic arm control suite featuring zero-glitch ESP32 firmware, linear slew motion profiling, browser-based hotkey control (USB WebSerial & WiFi WebSockets), and complete 3D CAD models.
 
