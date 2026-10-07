@@ -1,6 +1,6 @@
 ﻿# 🦾 7-DOF Robot Arm Hotkey & Web Controller
 
-A high-performance robotic arm control suite featuring zero-glitch ESP32 firmware, linear slew motion profiling, browser-based hotkey control (USB WebSerial & WiFi WebSockets), and complete 3D CAD models.
+A high-performance robotic arm control suite featuring zero-glitch ESP32 firmware, linear slew motion profiling, browser-based hotkey control (USB WebSerial), and complete 3D CAD models.
 
 ---
 
@@ -10,7 +10,6 @@ A high-performance robotic arm control suite featuring zero-glitch ESP32 firmwar
 - **Linear Slew Profile**: Smooth, non-blocking motion ramping at user-selectable speeds (20°/s to 120°/s) to protect gearboxes and eliminate jerks.
 - **Dual Connectivity Modes**:
   - **USB Mode**: Direct low-latency WebSerial communication via Chrome/Edge/Opera.
-  - **WiFi AP Mode**: Self-hosted Access Point (`RobotArm-Hotkeys`) with embedded WebSockets server and mobile-friendly web controller served directly from ESP32 PROGMEM.
 - **Full Keyboard Hotkeys**: Control all 6 axes + claw simultaneously with configurable step sizes and continuous drive.
 - **Complete CAD Package**: Includes 12 universal 3D-printable `.STEP` models and the SolidWorks master assembly (`RobotArm_Assembly.SLDASM`).
 
@@ -36,16 +35,11 @@ A high-performance robotic arm control suite featuring zero-glitch ESP32 firmwar
 │       ├── Shoulder.STEP
 │       └── Wrist.STEP
 ├── firmware/
-│   ├── robot_arm_v3/                   # USB WebSerial firmware
-│   │   └── robot_arm_v3.ino
-│   └── robot_arm_v3_wifi/              # WiFi AP + WebSockets firmware
-│       ├── robot_arm_v3_wifi.ino
-│       └── web_page.h
+│   └── robot_arm_v3/                   # USB WebSerial firmware
+│       └── robot_arm_v3.ino
 ├── controller/
-│   ├── servo_hotkeys_v2.html           # USB WebSerial controller UI
-│   └── servo_hotkeys_wifi.html         # WiFi / WebSocket controller UI
+│   └── servo_hotkeys_v2.html           # USB WebSerial controller UI
 ├── start_hotkey_controller.bat         # 1-click launcher for USB mode
-├── start_hotkey_wifi.bat               # 1-click launcher for WiFi mode
 ├── .gitignore
 └── README.md
 ```
@@ -106,12 +100,10 @@ A high-performance robotic arm control suite featuring zero-glitch ESP32 firmwar
 ### 1. Flash the ESP32 Firmware
 1. Open the [Arduino IDE](https://www.arduino.cc/en/software).
 2. Install the **esp32** board package (`Tools` > `Board` > `Boards Manager...`).
-3. For WiFi mode, install the **WebSockets** library by Markus Sattler via Library Manager.
-4. Select your ESP32 board and COM port.
-5. Open either:
+3. Select your ESP32 board and COM port.
+4. Open:
    - `firmware/robot_arm_v3/robot_arm_v3.ino` (for USB WebSerial)
-   - `firmware/robot_arm_v3_wifi/robot_arm_v3_wifi.ino` (for WiFi WebSockets)
-6. Click **Upload**.
+5. Click **Upload**.
 
 ### 2. Launch the Controller
 
