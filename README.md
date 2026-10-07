@@ -79,19 +79,20 @@ A high-performance robotic arm control suite featuring zero-glitch ESP32 firmwar
 ---
 
 ## ⌨️ Keyboard Hotkey Map
-
 | Key Binding | Function | Direction / Action |
 |:-----------:|----------|-------------------|
-| <kbd>Q</kbd> / <kbd>A</kbd> | Base | Rotate Left / Right |
+| <kbd>Q</kbd> / <kbd>A</kbd> | Base Yaw | Rotate Left / Right |
 | <kbd>W</kbd> / <kbd>S</kbd> | Shoulder | Tilt Up / Down |
 | <kbd>E</kbd> / <kbd>D</kbd> | Elbow | Tilt Up / Down |
 | <kbd>R</kbd> / <kbd>F</kbd> | Forearm | Tilt Up / Down |
 | <kbd>T</kbd> / <kbd>G</kbd> | Wrist Roll | Rotate CW / CCW |
 | <kbd>Y</kbd> / <kbd>H</kbd> | Wrist Pitch | Tilt Up / Down |
-| <kbd>Space</kbd> / <kbd>C</kbd> | Gripper | Close / Open Claw |
-| <kbd>1</kbd> – <kbd>5</kbd> | Speed | Preset Speeds (1 = 20°/s, 3 = 80°/s, 5 = 120°/s) |
-| <kbd>Home</kbd> / UI Button | Home Pose | Auto-align arm to default posture |
-| <kbd>Esc</kbd> | **E-Stop** | Instantly freeze all joints |
+| <kbd>U</kbd> / <kbd>J</kbd> | Gripper | Close / Open Claw |
+| <kbd>←</kbd> / <kbd>→</kbd> | Active ch nudge | Nudge Selected Joint (− / +) |
+| <kbd>[</kbd> / <kbd>]</kbd> | Step size | Cycle Step Size (1°, 5°, 10°, 20°) |
+| <kbd>Space</kbd> | Home pose | Auto-align arm to default posture |
+| <kbd>1</kbd> – <kbd>7</kbd> | Select ch | Select Active Joint (CH 15 to CH 9) |
+| <kbd>Esc</kbd> | **E-Stop** | Instantly freeze all joints / Toggle resume |
 
 ---
 
