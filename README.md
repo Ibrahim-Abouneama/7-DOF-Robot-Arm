@@ -115,20 +115,10 @@ A high-performance robotic arm control suite featuring zero-glitch ESP32 firmwar
 
 ### 2. Launch the Controller
 
-#### Option A: USB WebSerial
 1. Connect ESP32 to your PC via USB.
 2. Double-click `start_hotkey_controller.bat` (opens `controller/servo_hotkeys_v2.html` in Chrome/Edge/Opera).
 3. Click **Connect Serial**, select your ESP32 COM port (115200 baud).
 4. Use your keyboard or on-screen sliders to control the arm.
-
-#### Option B: Wireless WiFi AP
-1. Power up the ESP32.
-2. Connect your PC, tablet, or phone to the WiFi network:
-   - **SSID**: `RobotArm-Hotkeys`
-   - **Password**: `12345678`
-3. Either:
-   - Open your browser to `http://192.168.4.1`, or
-   - Double-click `start_hotkey_wifi.bat` on PC and click **Connect WiFi**.
 
 ---
 
